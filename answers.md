@@ -17,8 +17,7 @@ diagnosis_notes field contains sensitive personal and health information, so it 
      The API key is hardcoded in script, which is a security risk  and violates best practices
  ## Issue 2 : No Rate limiting:
      The script makes repeated API calls without any delay, which may violate API rate limits and overload the server
- ## Issue 3 : Storing raw PII data
-     The script stores all collected records without cleaning sensitive data , which can lead to privacy violations
+ 
      
 ```python
 import requests
