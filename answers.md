@@ -1,4 +1,4 @@
-Task 1 — Classify and Handle PII Fields
+## Task 1 — Classify and Handle PII Fields
 full_name       - Direct PII    - Drop 
 email           - Direct PII    - Drop/Mask
 date_of_birth   - Indirect PII  - Mask (Ex.Keep only the year)
@@ -11,13 +11,13 @@ date_of_birth,zip_code and job_title comes under Indirect_PII which cannot be us
 diagnosis_notes field contains sensitive personal and health information, so it should be pseudonymized to remove any details before sharing
 
 
-Task 2 — Audit the API Script for Ethical Compliance
+## Task 2 — Audit the API Script for Ethical Compliance
 
- Issue 1 : Hardcoded API key:
+ # Issue 1 : Hardcoded API key:
      The API key is hardcoded in script, which is a security risk  and violates best practices
- Issue 2 : No Rate limiting:
+ # Issue 2 : No Rate limiting:
      The script makes repeated API calls without any delay, which may violate API rate limits and overload the server
- Issue 3 : Storing raw PII data
+ # Issue 3 : Storing raw PII data
      The script stores all collected records without cleaning sensitive data , which can lead to privacy violations
      
 ```python
